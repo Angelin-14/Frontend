@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Loginform</title>
+</head>
+<body>
+    <center>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name</td>  <td><input type="text" placeholder="Enter your first Name"></td>
+                </tr>
+                <tr>
+                    <td>Second Name</td>  <td><input type="text" placeholder="Enter your Second Name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>  <td><input type="name" placeholder="Enter your Email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>  <td><input type="password" placeholder="Enter your Password" required length="6"></td>
+                    <span class="toggle-password" onclick="togglePasswordVisibility('Password')"></span>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>  <td><input type="password" placeholder="Enter your Confirm Password" required length="6"></td>
+                    <span class="toggle-password" onclick="togglePasswordVisibility('confirmPassword')">
+                    <span class="error" id="confirmPasswordError">Passwords do not match.</span>
+                </tr>
+
+                
+            
+                <tr>
+                    <td></td> <td><input type="submit"></td> 
+                </tr>
+                
+            </table>
+        </form>
+    </center>
+    
+    
+</body>
+</html>
+
+
+First NAme  With Place holder
+Second NAme
+Email
+Pwd 
+con pwd
+submit
+
+
+</div>
+<div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+    <span class="error" id="passwordError">Password must be at least 6 characters long.</span>
+</div>
+<div class="form-group">
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+    <span class="error" id="confirmPasswordError">Passwords do not match.</span>
+</div>
+<button type="submit">Submit</button>
